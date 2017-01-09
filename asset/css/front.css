@@ -377,11 +377,12 @@ form .icon-question-sign {
 
 .pi-header .pi-header-body .pi-header-body-phone {
     margin: 10px 0;
+    padding-right: 15px;
 }
 
 .pi-header .pi-header-body .pi-header-body-phone a {
     font-size: 20px;
-    color: #999;
+    color: #192F50;
 }
 
 .pi-header .navbar-default {
@@ -399,12 +400,17 @@ form .icon-question-sign {
 }
 
 .pi-header .navbar-default .navbar-nav {
-    padding: 15px 0;
+    padding: 5px 0;
+}
+
+.pi-header .navbar-default .navbar-nav > li {
+    max-width: 200px;
+    text-align: center;
 }
 
 .pi-header .navbar-default .navbar-nav > li > a {
     color: #EE011A;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .pi-header .navbar-default .navbar-nav > li > a:hover,
@@ -497,10 +503,41 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-body ul li {
-    padding-right: 15px;
+    padding: 5px 15px;
 }
 
 .pi-footer .pi-footer-copyright {
     background-color: #f4f4f4;
     padding: 25px 0;
+}
+
+/* extra */
+.thumbnail {
+    text-align: center;
+}
+
+.thumbnail .caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -50px;
+    height: 50px;
+    position: relative;
+    padding: 0;
+}
+
+.thumbnail .caption h3 {
+    font-size: 14px;
+    margin: 0;
+    padding: 4px 10px;
+}
+
+.thumbnail .caption h3 a {
+    color: #fff;
+}
+
+.widget-media-list {
+    text-align: center;
+}
+
+.widget-media-list h4 {
+    min-height: 50px;
 }

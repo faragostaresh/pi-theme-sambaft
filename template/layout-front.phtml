@@ -105,7 +105,7 @@ $breadcrumbs = $this->breadcrumb(
 <body id="pi-<?php echo $module; ?>" class="pi-locale-<?php echo $locale; ?> pi-front">
 <!-- Header: brand, slogan, user bar -->
 <header class="pi-header">
-    <div class="pi-header-body">
+    <div class="pi-header-body hidden-xs">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -116,11 +116,11 @@ $breadcrumbs = $this->breadcrumb(
                 <div class="col-md-6">
                     <div class="pi-header-body-menu">
                         <ul class="list-inline pull-right">
-                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="در باره ما">در باره ما</a></li>
-                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="همکاری با ما">همکاری با ما</a></li>
-                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="تماس با ما">تماس با ما</a></li>
-                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="بازرگانی">بازرگانی</a></li>
-                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="محصولات">محصولات</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>page/products" title="محصولات">محصولات</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>page/trading" title="بازرگانی">بازرگانی</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>page/work-with-us" title="همکاری با ما">همکاری با ما</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>page/about-us" title="درباره ما">درباره ما</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>contact" title="تماس با ما">تماس با ما</a></li>
                         </ul>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ $breadcrumbs = $this->breadcrumb(
         </div>
     </nav>
     <?php if (!empty($blocks['0'])) { ?>
-        <div class="pi-header-slide">
+        <div class="pi-header-slide hidden-xs">
             <div class="pi-zone-0">
                 <?php foreach ($blocks['0'] as $block) {
                     include $blockTemplate;
@@ -165,7 +165,7 @@ $breadcrumbs = $this->breadcrumb(
             </div>
         </div>
     <?php } else { ?>
-        <div class="pi-header-image">
+        <div class="pi-header-image hidden-xs">
             <img class="img-responsive" src="<?php echo $this->assetTheme('image/header.jpg'); ?>" alt="<?php echo _escape($sitename); ?>">
         </div>
     <?php } ?>
@@ -315,28 +315,29 @@ $breadcrumbs = $this->breadcrumb(
     <div class="pi-footer-body">
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 hidden-xs">
                     <img class="img-responsive text-center" src="<?php echo $this->assetTheme('image/footer-logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                 </div>
                 <div class="col-md-4">
                     <p>شرکت سام بافت پارسیان تولید کننده کیسه های پلی پروپیلنی در سایز و وزن و رنگهای مختلف فعالیت خود را از سال 1381 در تبریز آغاز نموده است.</p>
+                    <p>این شرکت جهت تولید انواع مختلف کیسه های پلی پروپیلنی و جامبو بگ ها از آخرین تکنولوژیها و دستگاههای تولید در راستای افزایش رضایت مشتری استفاه می نماید.</p>
                 </div>
                 <div class="col-md-4">
-                    <h3><a href="<?php echo Pi::url($this->url('home')); ?>" title="محصولات سام بافت">محصولات سام بافت</a></h3>
+                    <h3><a href="<?php echo Pi::url($this->url('home')); ?>page/products" title="محصولات سام بافت">محصولات سام بافت</a></h3>
                     <ul class="list-unstyled">
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="کیسه های مخصوص صنایع غذایی و کشاورزی">کیسه های مخصوص صنایع غذایی و کشاورزی</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="کیسه های مر بوط به مصالح  ساختمانی">کیسه های مر بوط به مصالح  ساختمانی</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="کیسه های صنعتی و کشاورزی">کیسه های صنعتی و کشاورزی</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="تولیدات جانبی و متفرقه">تولیدات جانبی و متفرقه</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/bags-of-building-materials" title="کیسه های مخصوص صنایع غذایی و کشاورزی">کیسه های مخصوص صنایع غذایی و کشاورزی</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/bags-for-the-food-industry-and-agriculture" title="کیسه های مر بوط به مصالح  ساختمانی">کیسه های مر بوط به مصالح  ساختمانی</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/industrial-and-agricultural-bags" title="کیسه های صنعتی و کشاورزی">کیسه های صنعتی و کشاورزی</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/accessories-and-other-products" title="تولیدات جانبی و متفرقه">تولیدات جانبی و متفرقه</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3><a href="<?php echo Pi::url($this->url('home')); ?>" title="درباره سام بافت">درباره سام بافت</a></h3>
+                    <h3><a href="<?php echo Pi::url($this->url('home')); ?>" title="سام بافت">سام بافت</a></h3>
                     <ul class="list-unstyled">
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="در باره ما">در باره ما</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="همکاری با ما">همکاری با ما</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="تماس با ما">تماس با ما</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="بازرگانی">بازرگانی</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/about-us" title="درباره ما">درباره ما</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/work-with-us" title="همکاری با ما">همکاری با ما</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>contact" title="تماس با ما">تماس با ما</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/trading" title="بازرگانی">بازرگانی</a></li>
                     </ul>
                 </div>
             </div>
