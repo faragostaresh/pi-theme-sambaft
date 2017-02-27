@@ -109,14 +109,19 @@ $breadcrumbs = $this->breadcrumb(
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="pi-header-body-phone">
-                        <a href="<?php echo Pi::url($this->url('home')); ?>contact" title="تماس با ما">041-32466277</a>
+                    <div class="pi-header-body-language">
+                        <ul class="list-inline">
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>" title="فارسی">فارسی</a></li>
+                            <li><a href="https://en.sambaft.com" title="English">English</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="pi-header-body-menu">
                         <ul class="list-inline pull-right">
                             <li><a href="<?php echo Pi::url($this->url('home')); ?>page/products" title="محصولات">محصولات</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>news" title="اخبار">اخبار</a></li>
+                            <li><a href="<?php echo Pi::url($this->url('home')); ?>portfolio" title="گالری">گالری</a></li>
                             <li><a href="<?php echo Pi::url($this->url('home')); ?>page/trading" title="بازرگانی">بازرگانی</a></li>
                             <li><a href="<?php echo Pi::url($this->url('home')); ?>page/work-with-us" title="همکاری با ما">همکاری با ما</a></li>
                             <li><a href="<?php echo Pi::url($this->url('home')); ?>page/about-us" title="درباره ما">درباره ما</a></li>
@@ -171,7 +176,7 @@ $breadcrumbs = $this->breadcrumb(
     <?php } ?>
 </header>
 <!-- Page main content: breadcrumb, flash-messenger, blocks and module content -->
-<section class="pi-section">
+<section class="pi-section <?php if ($module != 'system') { echo 'pi-section-page';} ?>">
     <?php if ($breadcrumbs) { ?>
         <div class="pi-breadcrumbs">
             <div class="container">
@@ -300,7 +305,7 @@ $breadcrumbs = $this->breadcrumb(
     <div class="pi-footer-social">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 pi-footer-social-text">تولید کننده کیسه های پلی پروپیلنی از سال ۱۳۸۱</div>
+                <div class="col-md-6 pi-footer-social-text">تولید کننده کیسه های پلی پروپیلنی از سال ۱۳۸۴</div>
                 <div class="col-md-6 text-right">
                     <ul class="list-inline">
                         <li><a href="#" title=""><i class="fa fa-facebook"></i></a></li>
@@ -319,8 +324,7 @@ $breadcrumbs = $this->breadcrumb(
                     <img class="img-responsive text-center" src="<?php echo $this->assetTheme('image/footer-logo.png'); ?>" alt="<?php echo _escape($sitename); ?>">
                 </div>
                 <div class="col-md-4">
-                    <p>شرکت سام بافت پارسیان تولید کننده کیسه های پلی پروپیلنی در سایز و وزن و رنگهای مختلف فعالیت خود را از سال 1381 در تبریز آغاز نموده است.</p>
-                    <p>این شرکت جهت تولید انواع مختلف کیسه های پلی پروپیلنی و جامبو بگ ها از آخرین تکنولوژیها و دستگاههای تولید در راستای افزایش رضایت مشتری استفاه می نماید.</p>
+                    <p>شرکت سام بافت در سال 1384 فعالیت خود را بصورت محدود و در زمینه ی تولید کیسه های پلی پروپیلنی آغاز کرد در طول 11سال فعالیت خود ، این شرکت با بهره گیری از آخرین تکنولوژی های روز و نیز بهره مندی از استعدادهای درخشان جوانان این کشور ، توانسته است بعنوان یکی از بزرگترین تولید کنندگان کیسه نخ و تسمه های پلی پروپیلنی در ایران شناخته شود</p>
                 </div>
                 <div class="col-md-4">
                     <h3><a href="<?php echo Pi::url($this->url('home')); ?>page/products" title="محصولات سام بافت">محصولات سام بافت</a></h3>
@@ -329,15 +333,18 @@ $breadcrumbs = $this->breadcrumb(
                         <li><a href="<?php echo Pi::url($this->url('home')); ?>page/bags-for-the-food-industry-and-agriculture" title="کیسه های مر بوط به مصالح  ساختمانی">کیسه های مر بوط به مصالح  ساختمانی</a></li>
                         <li><a href="<?php echo Pi::url($this->url('home')); ?>page/industrial-and-agricultural-bags" title="کیسه های صنعتی و کشاورزی">کیسه های صنعتی و کشاورزی</a></li>
                         <li><a href="<?php echo Pi::url($this->url('home')); ?>page/accessories-and-other-products" title="تولیدات جانبی و متفرقه">تولیدات جانبی و متفرقه</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/big-bag" title="بیگ بگ">بیگ بگ</a></li>
                     </ul>
                 </div>
                 <div class="col-md-2">
                     <h3><a href="<?php echo Pi::url($this->url('home')); ?>" title="سام بافت">سام بافت</a></h3>
                     <ul class="list-unstyled">
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/about-us" title="درباره ما">درباره ما</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>news" title="اخبار">اخبار</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>portfolio" title="گالری">گالری</a></li>
                         <li><a href="<?php echo Pi::url($this->url('home')); ?>page/work-with-us" title="همکاری با ما">همکاری با ما</a></li>
-                        <li><a href="<?php echo Pi::url($this->url('home')); ?>contact" title="تماس با ما">تماس با ما</a></li>
                         <li><a href="<?php echo Pi::url($this->url('home')); ?>page/trading" title="بازرگانی">بازرگانی</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>contact" title="تماس با ما">تماس با ما</a></li>
+                        <li><a href="<?php echo Pi::url($this->url('home')); ?>page/about-us" title="درباره ما">درباره ما</a></li>
                     </ul>
                 </div>
             </div>

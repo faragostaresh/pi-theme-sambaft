@@ -16,7 +16,11 @@ a {
 
 a:hover {
     text-decoration: none;
-    color: #5D5D5D;
+    color: #192F50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #192F50;
 }
 
 h1 {
@@ -369,19 +373,30 @@ form .icon-question-sign {
 
 .pi-header .pi-header-body .pi-header-body-menu a {
     color: #333;
+    font-size: 12px;
+}
+
+.pi-header .pi-header-body .pi-header-body-menu li {
+    border-left: 1px solid #222;
+    padding-left: 10px;
+    margin-right: 1px;
+}
+
+.pi-header .pi-header-body .pi-header-body-menu li:last-child {
+    border: none;
 }
 
 .pi-header .pi-header-body .pi-header-body-menu a:hover {
     color: #666;
 }
 
-.pi-header .pi-header-body .pi-header-body-phone {
+.pi-header .pi-header-body .pi-header-body-language {
     margin: 10px 0;
     padding-right: 15px;
 }
 
-.pi-header .pi-header-body .pi-header-body-phone a {
-    font-size: 20px;
+.pi-header .pi-header-body .pi-header-body-language a {
+    font-size: 14px;
     color: #192F50;
 }
 
@@ -392,7 +407,7 @@ form .icon-question-sign {
 }
 
 .pi-header .navbar-default .navbar-brand {
-    color: #5D5D5D;
+    color: #192F50;
 }
 
 .pi-header .navbar-default .navbar-text {
@@ -404,7 +419,7 @@ form .icon-question-sign {
 }
 
 .pi-header .navbar-default .navbar-nav > li {
-    max-width: 200px;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -415,14 +430,19 @@ form .icon-question-sign {
 
 .pi-header .navbar-default .navbar-nav > li > a:hover,
 .pi-header .navbar-default .navbar-nav > li > a:focus {
-    color: #666;
+    color: #192F50;
     background-color: transparent;
 }
 
 /* section */
 .pi-section {
-    background-color: #fff;
+    background: #fff;
     padding-bottom: 15px;
+}
+
+.pi-section-page {
+    /* background: #fff url('../image/bg.jpg');
+    background-size: cover; */
 }
 
 .pi-section .pi-breadcrumbs {
@@ -437,15 +457,18 @@ form .icon-question-sign {
 .pi-section .pi-breadcrumbs .breadcrumb {
     background-color: #f4f4f4;
     margin-bottom: 0;
+    color: #192F50;
 }
 
 .pi-section .pi-breadcrumbs .breadcrumb a {
-    color: #5D5D5D;
+    color: #192F50;
 }
 
 .pi-section .pi-module-content {
     padding: 15px;
+    margin-top: 30px;
     margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 /* footer */
@@ -475,13 +498,13 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-social ul li a:hover {
-    color: #EE011A;
+    color: #192F50;
 }
 
 .pi-footer .pi-footer-social .pi-footer-social-text {
     line-height: 75px;
     font-size: 20px;
-    color: #999;
+    color: #192F50;
 }
 
 .pi-footer .pi-footer-body {
@@ -490,16 +513,17 @@ form .icon-question-sign {
 }
 
 .pi-footer .pi-footer-body a {
-    color: #333;
+    color: #192F50;
 }
 
 .pi-footer .pi-footer-body a:hover {
-    color: #666;
+    color: #EE011A;
 }
 
 .pi-footer .pi-footer-body h3 {
     padding: 0 0 5px 0;
     margin: 0;
+    color: #192F50;
 }
 
 .pi-footer .pi-footer-body ul li {
@@ -514,6 +538,7 @@ form .icon-question-sign {
 /* extra */
 .thumbnail {
     text-align: center;
+    border: 1px solid #ccc;
 }
 
 .thumbnail .caption {
@@ -540,4 +565,60 @@ form .icon-question-sign {
 
 .widget-media-list h4 {
     min-height: 50px;
+}
+
+/* project list */
+.portfolio-block .thumbnail .caption {
+    display: none;
+}
+
+.portfolio-block .thumbnail img {
+    height: 200px !important;
+    max-width: 100%;
+}
+
+.portfolio-list .thumbnail img {
+    height: 200px !important;
+    max-width: 100% !important;
+}
+
+.portfolio .thumbnail .caption {
+    display: none !important;
+}
+
+/* ribbon */
+.portfolio-block .portfolio-ribbon {
+    position: relative;
+    color: #434443;
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 13px;
+    display: block;
+}
+
+.portfolio-block a.portfolio-ribbon:hover {
+    color: #434443;
+}
+
+.portfolio-block .portfolio-ribbon p {
+    display: inline;
+}
+
+.portfolio-block .portfolio-ribbon p span {
+    position: absolute;
+    display: inline-block;
+    right: -50px;
+    text-align: center;
+    text-transform: none;
+    top: 35px;
+    background: #FFC107;
+    width: 200px;
+    padding: 5px 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    z-index:1;
 }
