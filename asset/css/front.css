@@ -467,7 +467,7 @@ form .icon-question-sign {
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.95);
+    /* background-color: rgba(255, 255, 255, 0.95); */
 }
 
 /* footer */
