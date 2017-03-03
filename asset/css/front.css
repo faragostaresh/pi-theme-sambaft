@@ -436,7 +436,7 @@ form .icon-question-sign {
 
 /* section */
 .pi-section {
-    background: #fff;
+    background: #fff url('../image/bg.jpg') center center repeat;
     padding-bottom: 15px;
 }
 
